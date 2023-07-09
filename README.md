@@ -32,18 +32,33 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
   
+  **1.) Creating a Windows server VM and Windows 10 VM in Microsoft Azure**
+  
   ![image](https://github.com/akingsley22/configure-ad/assets/138138839/a9df99df-095a-4c03-9397-77794af8edbe)
+
+  ![image](https://github.com/akingsley22/configure-ad/assets/138138839/98b61b19-4ea8-42b8-b4b9-5c5027a902cf)
+
 
 </p>
 <p>
 Once Windows Server VM is created, it is going to act as the domain controller where AD (Active Directory) is going to be installed. 
   
-Next step, create another VM on a windows 10 server that is going to act as a client. Make sure both VM are in the same virtual network. 
+Next step, create another VM on a windows 10 server that is going to act as a client. Make sure both VM are in the same virtual network and the ip address of the domain controller is turned to static.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+  **2.) Ensuring Connectivity between the client and Domain Controller**
+![image](https://github.com/akingsley22/configure-ad/assets/138138839/5f2db3c5-eefd-46ee-987d-1fce9b0b355c)
+
+![image](https://github.com/akingsley22/configure-ad/assets/138138839/3f98dd48-fab5-41bc-9767-52d292e4305a)
+
+
+
+Login to the Domain controller with Remote Desktop and enable ICMPv4 on the local windows firewall 
+
+Login to Client-1 on Windows 10 and try to ping the Domain controller with ping -t <ipaddress>. If it goes through, connectivity is ensured.
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
