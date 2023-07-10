@@ -61,14 +61,22 @@ Login to the Domain controller with Remote Desktop and enable ICMPv4 on the loca
 Login to Client-1 on Windows 10 and try to ping the Domain controller with ping -t <ipaddress>. If it goes through, connectivity is ensured.
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+**3.) Install Active Directory**
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  
+  ![image](https://github.com/akingsley22/configure-ad/assets/138138839/23bd2d87-a3a3-476e-8224-600ff932fa2c)
+
+  ![image](https://github.com/akingsley22/configure-ad/assets/138138839/1f481b58-73b2-4839-9e9d-b9ca0cfb329e)
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+-Login to DC and Install active directory from Server Manager. 
+-Promote as a DC: Set up a new forest e.g. "mydomain.com" and a password
+-Your VM is automatically going to restart once you install AD. 
+-Log back into DC-1 as user: "mydomain.com\labuser"
 </p>
 <br />
