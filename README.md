@@ -128,8 +128,7 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
 
 -You can now log into Client-1 as a normal, non-administrative user
 
-   -Normally you would want to do this with Group Policy that allows you to change MANY systems at once
-
+   -Normally you would want to do this with Group Policy that allows you to change MANY systems at once!
   
 
 
