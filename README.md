@@ -114,6 +114,22 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
 
   -Now you can log into Client-1 with your domain admin account.
 
+**PART 4**
+
+**Setup Remote Desktop for non-administrative users on Client-1**
+
+-Login to Client-1 as mydomain.com\jane_admin and open system properties
+
+-Click "Remote Desktop"
+
+-Allow "domain users" access to remote desktop
+
+![image](https://github.com/akingsley22/configure-ad/assets/138138839/e096ae8a-a140-43f4-9102-9601c60b4b2d)
+
+-You can now log into Client-1 as a normal, non-administrative user
+
+   -Normally you would want to do this with Group Policy that allows you to change MANY systems at once
+
   
 
 
