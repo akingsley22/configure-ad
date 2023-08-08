@@ -102,6 +102,23 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
 
   **Join Client-1 to the Domain**
 
+  - Set Client-1's DNS settings to DC's Private IP address
+
+  - Restart Client-1
+
+![image](https://github.com/akingsley22/configure-ad/assets/138138839/c98e73fc-b2b6-420b-820d-411164af003e)
+
+  -Log back into Client-1 as labuser and join it to the domain (computer will restart). 
+
+  ![image](https://github.com/akingsley22/configure-ad/assets/138138839/55645b37-7d94-43cc-af09-32b94565826d)
+
+  -Now you can log into Client-1 with your domain admin account.
+
+  
+
+
+     
+
  
  
 </p>
