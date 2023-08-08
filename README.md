@@ -103,12 +103,12 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
   **Join Client-1 to the Domain**
 
   - Set Client-1's DNS settings to DC's Private IP address
-
+    
   - Restart Client-1
 
 ![image](https://github.com/akingsley22/configure-ad/assets/138138839/c98e73fc-b2b6-420b-820d-411164af003e)
 
-  -Log back into Client-1 as labuser and join it to the domain (computer will restart). 
+  - Log back into Client-1 as labuser and join it to the domain (computer will restart). 
 
   ![image](https://github.com/akingsley22/configure-ad/assets/138138839/55645b37-7d94-43cc-af09-32b94565826d)
 
@@ -118,17 +118,17 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
 
 **Setup Remote Desktop for non-administrative users on Client-1**
 
--Login to Client-1 as mydomain.com\jane_admin and open system properties
+- Login to Client-1 as mydomain.com\jane_admin and open system properties
 
--Click "Remote Desktop"
-
--Allow "domain users" access to remote desktop
+- Click "Remote Desktop"
+  
+- Allow "domain users" access to remote desktop
 
 ![image](https://github.com/akingsley22/configure-ad/assets/138138839/e096ae8a-a140-43f4-9102-9601c60b4b2d)
 
--You can now log into Client-1 as a normal, non-administrative user
+- You can now log into Client-1 as a normal, non-administrative user 
 
-   -Normally you would want to do this with Group Policy that allows you to change MANY systems at once!
+- Normally you would want to do this with Group Policy that allows you to change MANY systems at once!
   
 
 
