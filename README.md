@@ -32,6 +32,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p>
   
+  **PART 1**
+  
   **1.) Creating a Windows server VM and Windows 10 VM in Microsoft Azure**
   
   ![image](https://github.com/akingsley22/configure-ad/assets/138138839/a9df99df-095a-4c03-9397-77794af8edbe)
@@ -75,8 +77,32 @@ Login to Client-1 on Windows 10 and try to ping the Domain controller with ping 
 </p>
 <p>
 -Login to DC and Install active directory from Server Manager. 
--Promote as a DC: Set up a new forest e.g. "mydomain.com" and a password
+-Promote as a DC: Set up a new forest e.g. "mydomain.com" and a password.
 -Your VM is automatically going to restart once you install AD. 
--Log back into DC-1 as user: "mydomain.com\labuser"
+-Log back into DC-1 as user: "mydomain.com\labuser".
+
+ **PART 2**
+ 
+ **Creating Organizational Units and End Users**
+
+ - Open Active Directory Users and Computers.
+ - Right click on "mydomain.com" and create new organization unit.
+
+ ![image](https://github.com/akingsley22/configure-ad/assets/138138839/81e9d14d-c956-4d7b-8502-19cc83293686)
+
+ -To create Users within organization units, right click on already created organizational unit and create new Users.
+    
+     -If you wish, you can add user to domain admins group by rights clicking on user, click add to group, enter object names (domain), check names and select domain admin.
+
+ ![image](https://github.com/akingsley22/configure-ad/assets/138138839/87711012-a702-4d36-a957-601c5c23d213)
+
+ -  Now you can connect back into VM as The Domain controller
+
+  **PART 3**
+
+  **Join Client-1 to the Domain**
+
+ 
+ 
 </p>
 <br />
